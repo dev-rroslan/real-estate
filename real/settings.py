@@ -130,9 +130,13 @@ USE_TZ = True
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # <-- Updated!
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [ BASE_DIR /  'real/static']
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  # <-- Updated!
-
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
-
+STORAGES = {
+    # ...
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+    },
+}
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

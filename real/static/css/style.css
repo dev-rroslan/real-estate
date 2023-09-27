@@ -15,11 +15,15 @@ img {
   margin-right: 0.4rem; }
 
 #showcase {
-  background: url(../img/showcase.jpg) no-repeat top center fixed/cover;
-  position: relative;
-  min-height: 650px;
-  color: #fff;
-  padding-top: 6rem; }
+    background-image: url(../img/showcase.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 650px;
+    color: #fff;
+    padding-top: 6rem; }
   #showcase .home-search {
     min-height: 400px;
     position: relative;
