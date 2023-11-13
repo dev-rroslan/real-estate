@@ -44,6 +44,8 @@ CSRF_TRUSTED_ORIGINS = ['https://*.fly.dev', 'https://real-estate.undi.online'] 
 
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
+    'listings.apps.ListingsConfig',
+    'realtors.apps.RealtorsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -89,7 +91,7 @@ WSGI_APPLICATION = 'real.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    # read os.environ['DATABASE_URL']
+    #read os.environ['DATABASE_URL']
     'default': env.db()  # <-- Updated!
 }
 
@@ -133,6 +135,9 @@ STATICFILES_DIRS = [ BASE_DIR /  'real/static']
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
+
+MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = '/media/'
 STORAGES = {
     # ...
     "staticfiles": {

@@ -1,0 +1,52 @@
+#header {
+    height: 50px;
+    background: #10284e;
+    color: #fff;
+}
+#branding {
+    float: left;
+}
+#branding h1 {
+    color: #fff;
+}
+#nav {
+    float: right;
+    margin-top: 10px;
+}
+#nav ul {
+    padding: 0;
+}
+#nav li {
+    display: inline;
+    list-style: none;
+}
+#nav a {
+    color: #fff;
+    text-decoration: none;
+}
+a:link,
+a:visited {
+    color: #10284e;
+}
+#nav a:hover {
+    color: #000;
+    background: #fff;
+}
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+div.breadcrumbs {
+    color : #10284e;
+    background: #88ad85;
+}
+div.breadcrumbs a {
+    color: #333;
+}
+div.breadcrumbs a:hover {
+    color: #10284e;
+    text-decoration: none;
+}
+.module h2, .module caption, .inline-group h2 {
+    background: #154111;
+}
