@@ -37,7 +37,7 @@ env = environ.Env(  # <-- Updated!
 )
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.fly.dev', 'shark-app-yqcoa.ondigitalocean.app']  # <-- Updated!
-#CSRF_TRUSTED_ORIGINS = ['https://*.fly.dev', 'shark-app-yqcoa.ondigitalocean.app']  # <-- Updated!
+CSRF_TRUSTED_ORIGINS = ['https://*.fly.dev', 'https://shark-app-yqcoa.ondigitalocean.app']  # <-- Updated!
 
 
 # Application definition
